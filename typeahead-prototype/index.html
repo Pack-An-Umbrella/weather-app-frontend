@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌦️Pack An Umbrella ☔ Typeahead Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form class="search-form">
+    <input type="text" class="search" placeholder="Place or area">
+    <ul class="suggestions">
+      <li>Filter for a place</li>
+      <li>or an area</li>
+    </ul>
+  </form>
+<script>
+
+// Met Office site list, hosted on a static page
+const endpoint = 'https://gist.githubusercontent.com/notwaving/1bfd4f20a54fccba52a51b711c3e0d7c/raw/73af5a2070cedb4c45edc3a3bf63c94e4ad4ddf4/locations.json';
+// Create an empty array
+const locations = [];
+
+fetch(endpoint)
+// Grab JSON data
+  .then(blob => blob.json())
+  // Clean up data: if object is missing 'name' or 'unitaryAuthArea', don't break out of code
+  .then(data => data.map(item => {
+    item.name = item.name || ''
+    item.unitaryAuthArea = item.unitaryAuthArea || ''
+    return item
+  }))
+  // Get this data into locations array by spreading into a push method
+  .then(data => locations.push(...data))
+  
+  // Filter array into listenable subset
+function findMatches(wordToMatch, locations) {
+  return locations.filter(place => {
+    // Figure out if place or area matches what was searched, using a regular expression. 
+    //'g' = global (it will look through the entire string); 'i' = insensitive (it will match lower as well as uppercase)
+    const regex = new RegExp(wordToMatch, 'gi'); 
+    // Return if search string matches place or area
+    return place.name.match(regex)|| place.unitaryAuthArea.match(regex)
+  });
+}
+
+// Called every time the user types (i.e. changes the value) in the search box
+function displayMatches(){
+  const matchArray = findMatches(this.value, locations);
+  const html = matchArray.map(place => {
+    // Highlight user query in return values
+    const regex = new RegExp(this.value, 'gi');
+    const placeName = place.name.replace(regex, `<span class="hl">${this.value}</span>`)
+    const areaName = place.unitaryAuthArea.replace(regex, `<span class="hl">${this.value}</span>`)
+    return `
+      <li>
+        <span class="name">${placeName}, ${areaName}</span>
+        <span class="id">${place.id}</span>
+      </li>
+    `;
+  }).join('');
+  suggestions.innerHTML = html;
+}
+
+// Creates variables for the search box and the drop down suggestions, as specified in the <form>
+const searchInput = document.querySelector('.search')
+const suggestions = document.querySelector('.suggestions')
+
+// 'change' works when you click outside the search box
+// 'keyup' works after every key press
+searchInput.addEventListener('change', displayMatches);
+searchInput.addEventListener('keyup', displayMatches);
+
+</script>
+</body>
+</html>
