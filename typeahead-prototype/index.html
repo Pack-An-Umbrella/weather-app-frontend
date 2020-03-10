@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🌦️Pack An Umbrella ☔</title>
+  <title>🌦️Pack An Umbrella ☔ Typeahead Prototype</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <form class="search-form">
-    <input type="text" class="search" placeholder="City or State">
+    <input type="text" class="search" placeholder="Place or area">
     <ul class="suggestions">
-      <li>Filter for a city</li>
-      <li>or a state</li>
+      <li>Filter for a place</li>
+      <li>or an area</li>
     </ul>
   </form>
 <script>
@@ -73,7 +73,6 @@ const suggestions = document.querySelector('.suggestions')
 // 'keyup' works after every key press
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
-
 
 </script>
 </body>
