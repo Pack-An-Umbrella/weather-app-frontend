@@ -1,12 +1,12 @@
 import React from 'react';
+import WeatherComponent from './components/WeatherComponent';
 // import logo from './logo.svg';
 // import './App.css';
 
 class App extends React.Component {
 
   state = {
-    weatherParameters: [
-        {
+    weatherParameters: {
             location: "location",
             feelsLikeTemperature: "9 C",
             temperature: "12 C",
@@ -15,10 +15,9 @@ class App extends React.Component {
             chanceOfRain: "28 %"
             
         }
-    ]
+    
 }
-
-
+ 
 
 
 
@@ -26,6 +25,7 @@ render() {
   return (
     <div className="container">
     <h1>Pack an umbrella</h1>   
+    <WeatherComponent allWeather={this.state.weatherParameters}/>
 
     </div>
   );
