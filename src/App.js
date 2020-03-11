@@ -54,8 +54,8 @@ generateRecommendation = (weatherForecast) => {
 
 
   recommendations.push(this.uvRecommendation(weatherForecast.maxUVIndex));
-  recommendations.push("no jacket");
-  recommendations.push("");
+  recommendations.push(this.feelsLikeTemperature(weatherForecast.feelsLikeTemperature));
+  recommendations.push(this.chanceOfRain(weatherForecast.chanceOfRain));
   
   return recommendations.filter(fil => fil.length > 0).join(", ");
 }
