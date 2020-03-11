@@ -29,6 +29,16 @@ uvRecommendation = (uvMax) => {
   }
 } 
 
+feelsLikeTemperature = (temperature) => {
+  if (temperature <= 11) {
+      return "a warm jacket";
+  } else if (temperature >11 && temperature <19) {
+      return "a light jacket";
+  } else {
+    return "";
+  }
+} 
+
 
 generateRecommendation = (weatherForecast) => {
   let recommendations = [];
