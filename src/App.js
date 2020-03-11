@@ -12,7 +12,7 @@ class App extends React.Component {
             humanReadableValue: 'Low exposure',
             weatherType: "overcast",
             weatherValue: 8,
-            chanceOfRain: "28 %"
+            chanceOfRain: 28
             
         }
     
@@ -51,7 +51,6 @@ chanceOfRain = (chance) => {
 
 generateRecommendation = (weatherForecast) => {
   let recommendations = [];
-
 
   recommendations.push(this.uvRecommendation(weatherForecast.maxUVIndex));
   recommendations.push(this.feelsLikeTemperature(weatherForecast.feelsLikeTemperature));
