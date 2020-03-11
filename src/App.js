@@ -40,6 +40,15 @@ feelsLikeTemperature = (temperature) => {
 } 
 
 
+chanceOfRain = (chance) => {
+  if (chance > 25) {
+      return "an umbrella";
+  } else {
+    return "";
+  }
+} 
+
+
 generateRecommendation = (weatherForecast) => {
   let recommendations = [];
 
