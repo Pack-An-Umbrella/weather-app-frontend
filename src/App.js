@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MyForm from './MyForm';
 // import typeahead_v2 from './typeahead_v2'
 
 class App extends React.Component {
@@ -25,7 +26,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <h1>Pack an umbrella - Typeahead</h1>
-      
+        <MyForm />
 
       </div>
     );
