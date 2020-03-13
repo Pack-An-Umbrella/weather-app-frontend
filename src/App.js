@@ -1,10 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import MyForm from './MyForm';
-// import typeahead_v2 from './typeahead_v2'
+import WeatherApp from './WeatherApp';
 
-class App extends React.Component {
+function App() {
+
+
+  return (
+    <div>
+    <WeatherApp />
+    </div>
+  );
+}
+
+export default App; 
 
   // state = {
   //   weatherParameters: [
@@ -22,15 +31,15 @@ class App extends React.Component {
 
 
 
-  render() {
-    return (
-      <div className="container">
-        <h1>Pack an umbrella - Typeahead</h1>
-        <MyForm />
+//   render() {
+//     return (
+//       <div className="weather-app">
+//         <h1>Pack an umbrella</h1>
+//         <TypeaheadForm />
 
-      </div>
-    );
-  }
-}
+//       </div>
+//     );
+//   }
+// }
 
-export default App;
+// export default App;

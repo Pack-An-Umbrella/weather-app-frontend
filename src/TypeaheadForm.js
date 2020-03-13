@@ -1,25 +1,26 @@
 import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
 class TypeaheadForm extends React.Component {
 
   render() {
     return (
 
-   <>
-        <form>
-        <div className="form-group row">
-            <input type="text" className="search" placeholder="Place or area">
-              <ul className="suggestions">
-                <li>Filter for a place</li>
-                <li>or an area</li>
-              </ul>
-          </div>
-    </form>
+      <div>
+        <p>Where location search bar will be</p>
+      </div>
 
-  </>
 
-        )
-    
-    }
+    // <form>
+    //     <div className="search-form">
+    //     <label htmlFor="inputLocation">Enter Location</label>
+    //       <input type="text" className="search" placeholder="Place or area" />
+    //     </div>
+    // </form>
+
+);
 }
+}  
     
 export default TypeaheadForm;

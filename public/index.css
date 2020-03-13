@@ -83,10 +83,6 @@ span.id {
   font-size: 15px;
 }
 
-.hl {
-  background: #ffc600;
-}
-
-#test {
-    color: #ffc600;
+.h1 {
+  background-color: #ffc600;
 }
