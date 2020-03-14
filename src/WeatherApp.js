@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Typeahead from './Typeahead';
+import TypeaheadForm from './TypeaheadForm';
 
 class WeatherApp extends React.Component {
 
@@ -9,12 +8,18 @@ class WeatherApp extends React.Component {
     return (
 
       <div>
-          <h1>🌦️Pack An Umbrella ☔ - Typeahead Prototype</h1>
-          <TypeaheadForm />
-        
+        <h1>
+          <span role="img" aria-label="sunnycloud">🌦️</span>
+          Pack An Umbrella
+            <span role="img" aria-label="umbrella">☔</span>
+          Typeahead Prototype
+            </h1>
+        <TypeaheadForm />
+
       </div>
-);
+
+    );
+  }
 }
-}  
-    
-export default Container;
+
+export default WeatherApp;
