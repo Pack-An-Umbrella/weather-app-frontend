@@ -16,11 +16,13 @@ class TypeaheadForm extends React.Component {
         <div className="search-form">
         {/* <label htmlFor="inputLocation">Enter Location</label> */}
           <input type="text" className="search" placeholder="Place or area" />
+          {/* This adds a button, but with no styling, so commenting out for now
+          <button type="submit" className="" onClick="">Add</button> */}
         </div>
     </form>
 
-);
-}
+    );
+  }
 }  
     
 export default TypeaheadForm;
