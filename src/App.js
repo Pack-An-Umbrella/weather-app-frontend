@@ -1,5 +1,6 @@
 import React from 'react';
 import WeatherComponent from './components/WeatherComponent';
+import Header from './Header.js'
 
 class App extends React.Component {
 
@@ -59,8 +60,9 @@ generateRecommendation = (weatherForecast) => {
 
 render() {
   return (
+  
     <div className="container">
-    <h1>Pack an umbrella</h1>   
+    <Header />
     <WeatherComponent allWeather={this.state.weatherParameters}/>
     {this.generateRecommendation(this.state.weatherParameters)}
     </div>
