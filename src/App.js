@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import WeatherApp from './WeatherApp';
+import WeatherApp from './Header';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
 
 export default App; 
 
-  // state = {
+// state = {
   //   weatherParameters: [
   //     {
   //       location: "location",
