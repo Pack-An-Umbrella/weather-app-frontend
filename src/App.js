@@ -6,21 +6,41 @@ import Results from './components/Results';
 
 class App extends React.Component {
 
+  //when we load the app, our user sees the header element, the location selection element and a submit button
+
+
   state = {
-    weatherParameters: {
-            location: "location",
-            feelsLikeTemperature: 9,
-            temperature: 12,
-            maxUVIndex: 6,
-            humanReadableValue: 'Low exposure',
-            weatherType: "overcast",
-            weatherValue: 8,
-            chanceOfRain: 28
+
+
+    // weatherParameters: {
+    //         location: "location",
+    //         feelsLikeTemperature: 9,
+    //         temperature: 12,
+    //         maxUVIndex: 6,
+    //         humanReadableValue: 'Low exposure',
+    //         weatherType: "overcast",
+    //         weatherValue: 8,
+    //         chanceOfRain: 28
             
         }
     
+
+firstLoadComponents = () => {
+
+  //if empty - load 
+  if (this.state = {}) {
+    return (
+    <>
+    <Header />
+    <LocationSelection />
+    </> )
+    } else {
+      return <Results />
+    }
+
 }
 
+}
 
 uvRecommendation = (uvMax) => {
   if (uvMax >= 3) {
@@ -62,13 +82,13 @@ generateRecommendation = (weatherForecast) => {
 
 render() {
   return (
-  
     <div className="container">
-    <Header />
-    <Results /> 
+    {this.firstLoadComponents()} 
+    {/* <Header />
     <LocationSelection />
-    {/* <WeatherComponent allWeather={this.state.weatherParameters}/>
-    {this.generateRecommendation(this.state.weatherParameters)} */}
+    <Results />  */}
+    {/* <WeatherComponent allWeather={this.state.weatherParameters}/> */}
+    {/* {this.generateRecommendation(this.state.weatherParameters)}  */}
     </div>
   );
 }
@@ -76,15 +96,5 @@ render() {
 
 
 
-
-
-
-
-
-
-
-
-
-}
 
 export default App;
