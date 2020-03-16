@@ -1,5 +1,5 @@
 import React from 'react';
-import LocationButton from './LocationButton';
+
 
 class LocationSelection extends React.Component {
     render() {
@@ -14,7 +14,6 @@ class LocationSelection extends React.Component {
                 <option value="5">CARDIFF</option>
                 <option value="5">BELFAST</option>
             </select>
-            <LocationButton getIdProps={this.props.getIdProps}/>
             </>
 
         )
