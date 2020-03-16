@@ -21,104 +21,104 @@ class App extends React.Component {
     //         weatherType: "overcast",
     //         weatherValue: 8,
     //         chanceOfRain: 28
-            
-        }
-    
 
-firstLoadComponents = () => {
-
-  if (this.state) {
-    return (<>
-      <Header />(
-      <LocationSelection getIdProps={this.getId} />
-    </>);
-  } else {
-    return (
-      <>
-        <Results />
-      </>
-    );
   }
 
-  const getId = (locationId) => {
-    const locationMapping = {
-      'London': '352409',
-      'Salford': '353339',
-      'Glasgow': '351582',
-      'Leicester': '310011',
-      'Cardiff': '371381',
-      'Belfast': '350347'
+
+  firstLoadComponents = () => {
+
+    if (this.state) {
+      return (<>
+        <Header /> (
+        <LocationSelection getIdProps={this.getId} />
+      </>);
+    } else {
+      return (
+        <>
+          <Results />
+        </>
+      );
     }
-     return locationMapping[locationId];
+
+    const getId = (locationId) => {
+      const locationMapping = {
+        'London': '352409',
+        'Salford': '353339',
+        'Glasgow': '351582',
+        'Leicester': '310011',
+        'Cardiff': '371381',
+        'Belfast': '350347'
+      }
+      return locationMapping[locationId];
+
+    }
+
+    //   //if empty - load  
+    //   if (this.state = {}) {
+    //     return (
+    //     <>
+    //     <Header />
+    //     <LocationSelection />
+    //     </> )
+    //     } else {
+    //       return <Results />
+    //     }
+
+    // }
 
   }
 
-//   //if empty - load  
-//   if (this.state = {}) {
-//     return (
-//     <>
-//     <Header />
-//     <LocationSelection />
-//     </> )
-//     } else {
-//       return <Results />
-//     }
-
-// }
-
-}
-
-uvRecommendation = (uvMax) => {
-  if (uvMax >= 3) {
+  uvRecommendation = (uvMax) => {
+    if (uvMax >= 3) {
       return "sunglasses";
-  } else {
+    } else {
       return "";
+    }
   }
-} 
 
-feelsLikeTemperature = (temperature) => {
-  if (temperature <= 11) {
+  feelsLikeTemperature = (temperature) => {
+    if (temperature <= 11) {
       return "a warm jacket";
-  } else if (temperature >11 && temperature <19) {
+    } else if (temperature > 11 && temperature < 19) {
       return "a light jacket";
-  } else {
-    return "";
+    } else {
+      return "";
+    }
   }
-} 
 
 
-chanceOfRain = (chance) => {
-  if (chance > 25) {
+  chanceOfRain = (chance) => {
+    if (chance > 25) {
       return "an umbrella";
-  } else {
-    return "";
+    } else {
+      return "";
+    }
   }
-} 
 
 
-generateRecommendation = (weatherForecast) => {
-  let recommendations = [];
+  generateRecommendation = (weatherForecast) => {
+    let recommendations = [];
 
-  recommendations.push(this.uvRecommendation(weatherForecast.maxUVIndex));
-  recommendations.push(this.feelsLikeTemperature(weatherForecast.feelsLikeTemperature));
-  recommendations.push(this.chanceOfRain(weatherForecast.chanceOfRain));
-  
-  return recommendations.filter(fil => fil.length > 0).join(", ");
-}
+    recommendations.push(this.uvRecommendation(weatherForecast.maxUVIndex));
+    recommendations.push(this.feelsLikeTemperature(weatherForecast.feelsLikeTemperature));
+    recommendations.push(this.chanceOfRain(weatherForecast.chanceOfRain));
 
-render() {
-  return (
-    <div className="container">
-    {this.firstLoadComponents()} 
-    {/* <Header />
+    return recommendations.filter(fil => fil.length > 0).join(", ");
+  }
+
+  render() {
+    return (
+      <div className="container">
+        {this.firstLoadComponents()}
+        {/* <Header />
     <LocationSelection />
     <Results />  */}
-    {/* <WeatherComponent allWeather={this.state.weatherParameters}/> */}
-    {/* {this.generateRecommendation(this.state.weatherParameters)}  */}
+        {/* <WeatherComponent allWeather={this.state.weatherParameters}/> */}
+        {/* {this.generateRecommendation(this.state.weatherParameters)}  */}
 
-    </div>
-  );
-}
+      </div>
+    );
+  }
 
 }
 
