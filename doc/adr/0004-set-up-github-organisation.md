@@ -6,11 +6,11 @@ Accepted
 
 ## Context
 
-Create an organisation in order for us to collaborate remotely and share code
+Create an organisation in order for us to collaborate remotely and share code.
 
 ## Decision
 
-Team members are granted full admin permissions to project repos
+Team members are granted full admin permissions to project repos.
 
 ## Consequences
 
