@@ -40,18 +40,7 @@ class App extends React.Component {
       );
     }
 
-    const getId = (locationId) => {
-      const locationMapping = {
-        'London': '352409',
-        'Salford': '353339',
-        'Glasgow': '351582',
-        'Leicester': '310011',
-        'Cardiff': '371381',
-        'Belfast': '350347'
-      }
-      return locationMapping[locationId];
-
-    }
+   
 
     //   //if empty - load  
     //   if (this.state = {}) {
