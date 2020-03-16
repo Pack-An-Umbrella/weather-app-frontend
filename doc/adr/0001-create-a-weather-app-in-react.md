@@ -17,4 +17,4 @@ Produce MVP in time for the presentation in two weeks' time.
 * An intense two weeks of collaboration 
 * Flexibility of roles depending on the needs of the group 
 * The opportunity to research and test new ideas and technologies not covered on the course 
-* A commitment to presenting the project ‘as is’ on a set date.
+* A commitment to presenting the project ‘as is’ on a set date
