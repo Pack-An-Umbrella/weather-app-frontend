@@ -27,18 +27,31 @@ class App extends React.Component {
 
 firstLoadComponents = () => {
 
-  //if empty - load 
-  if (this.state = {}) {
+  if (this.state) {
+    return (<>
+      <Header />
+      <LocationSelection />
+    </>);
+  } else {
     return (
-    <>
-    <Header />
-    <LocationSelection />
-    </> )
-    } else {
-      return <Results />
-    }
+      <>
+        <Results />
+      </>
+    );
+  }
 
-}
+//   //if empty - load 
+//   if (this.state = {}) {
+//     return (
+//     <>
+//     <Header />
+//     <LocationSelection />
+//     </> )
+//     } else {
+//       return <Results />
+//     }
+
+// }
 
 }
 
@@ -93,7 +106,7 @@ render() {
   );
 }
 
-
+}
 
 
 
