@@ -4,7 +4,7 @@ class ClearButton extends React.Component {
     render() {
         return (
             <>
-    
+            <button className="add btn btn-primary font-weight-bold">Clear</button>
 
             </>
 
