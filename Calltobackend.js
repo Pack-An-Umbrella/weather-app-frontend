@@ -1,7 +1,8 @@
 const fetch = require('node-fetch');
 
 const location = "99183";
-const locationAsHumanReadable = "Reading";
+const locationAsHumanReadable = "Reading, Reading";
+// const unitaryLocationArea 
 
 fetch(`https://eoz4lnddoa.execute-api.eu-west-2.amazonaws.com/dev/weather/${location}`)
 .then(res => res.json())

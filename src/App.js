@@ -1,8 +1,8 @@
 import React from 'react';
 // import WeatherComponent from './components/WeatherComponent';
 import Header from './Header.js';
-import LocationSelection from './Location-Selection';
-import HeaderLocation from './components/HeaderLocation';
+import LocationSelection from './components/LocationSelection';
+import Results from './components/Results';
 
 class App extends React.Component {
 
@@ -65,7 +65,7 @@ render() {
   
     <div className="container">
     <Header />
-    <HeaderLocation />
+    <Results /> 
     <LocationSelection />
     {/* <WeatherComponent allWeather={this.state.weatherParameters}/>
     {this.generateRecommendation(this.state.weatherParameters)} */}
