@@ -13,7 +13,7 @@ class LocationSelection extends React.Component {
             <select className="custom-select w-90" defaultValue="" onChange={this.valueExtractor}>
                 <option value = "">CHOOSE YOUR LOCATION</option>
                 <option value="London">LONDON</option>
-                <option value="2">SALFORD</option>
+                <option value="Salford">SALFORD</option>
                 <option value="3">GLASGOW</option>
                 <option value="4">LEICESTER</option>
                 <option value="5">CARDIFF</option>

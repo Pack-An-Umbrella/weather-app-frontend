@@ -9,8 +9,8 @@ class App extends React.Component {
 
   state = {
 
-
-    // weatherParameters: {
+    weatherVariables : {}
+    // weatherV: {
     //         location: "location",
     //         feelsLikeTemperature: 9,
     //         temperature: 12,
@@ -25,25 +25,22 @@ class App extends React.Component {
   onLocationSubmit = (location) => {
     //use location to call backend
     console.log(location);
-    fetch(`https://eoz4lnddoa.execute-api.eu-west-2.amazonaws.com/dev/weather/${location}`)
+    fetch(`https://eoz4lnddoa.execute-api.eu-west-2.amazonaws.com/dev/weather/${this.getId(location)}`)
       .then(res => res.json())
-      .then(returnedJSon => this.convertToState(returnedJSon))
-      // .then(res => console.log(res))
+      .then(returnedJSon => this.convertToState(returnedJSon, location))
       .then (convertedState => {
-        console.log(convertedState);
         this.setState ({
-          weathervariables: convertedState
+          weatherVariables: convertedState
         })
       })
       .catch(function (error) {
           console.error(error);
           // this.setState({
-              
+          //   weatherVariables: {}
           // })
       });
-    return "why?";
-  }
 
+  }
 
  convertToState = (json, locationAsHumanReadable) => {
     const weatherParameters = {
@@ -64,7 +61,9 @@ class App extends React.Component {
 
   firstLoadComponents = () => {
 
-    if (this.state) {
+    if (this.state) {} 
+
+    if (Object.keys(this.state.weatherVariables).length === 0) {
       return (<>
         <Header /> (
         <LocationSelection locationSubmit={this.onLocationSubmit}/>
