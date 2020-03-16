@@ -7,11 +7,17 @@ body {
 .titleheader {
   color:  rgb(255, 208, 0);
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   opacity: 0.8;  
   margin-top: 60px;
 }
 
 .custom-select {
   margin-top: 50px;
+  height: 50px;
+  font-size: 25px;
+  opacity: 0.8;
+  background-color: white ;
+  border: transparent;
+  border-radius: 50px;
 }
