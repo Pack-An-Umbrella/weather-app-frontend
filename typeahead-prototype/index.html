@@ -16,10 +16,16 @@
   </form>
 <script>
 
+
+
+
 // Met Office site list, hosted on a static page
 const endpoint = 'https://gist.githubusercontent.com/notwaving/fbccd9e3c668d2da884a0231a44a1bfa/raw/d4544793a8f9d3c377df8916823aa674e5528896/all-locations.json';
-// Create an empty array
+// Create an empty array§
 const locations = [];
+
+
+
 
 fetch(endpoint)
 // Grab JSON data
@@ -34,7 +40,7 @@ fetch(endpoint)
   .then(data => locations.push(...data))
   
   // Filter array into listenable subset
-function findMatches(wordToMatch, locations) {
+  function findMatches(wordToMatch, locations) {
   return locations.filter(place => {
     // Figure out if place or area matches what was searched, using a regular expression. 
     //'g' = global (it will look through the entire string); 'i' = insensitive (it will match lower as well as uppercase)
@@ -61,6 +67,8 @@ function displayMatches(){
   }).join('');
   suggestions.innerHTML = html;
 }
+
+
 
 // Creates variables for the search box and the drop down suggestions, as specified in the <form>
 const searchInput = document.querySelector('.search')
