@@ -6,9 +6,10 @@ import ClearButton from './ClearButton';
 
 class Results extends React.Component {
     render() {
+
         return (
             <>
-            <HeaderLocation />
+            <HeaderLocation currentLocation={this.props.currentLocation} />
             <WeatherResults />
             <Recommendations />
             <ClearButton />

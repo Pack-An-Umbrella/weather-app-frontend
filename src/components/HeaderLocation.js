@@ -7,7 +7,7 @@ class HeaderLocation extends React.Component {
     return (
       <div>
             <header className="text-center"></header>
-            <h1 className="titleheaderh">Placeholder Location</h1>
+            <h1 className="titleheaderh">{this.props.currentLocation}</h1>
         </div>
 
     );

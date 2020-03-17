@@ -14,12 +14,11 @@ class LocationSelection extends React.Component {
                 <option value = "">CHOOSE YOUR LOCATION</option>
                 <option value="London">LONDON</option>
                 <option value="Salford">SALFORD</option>
-                <option value="3">GLASGOW</option>
-                <option value="4">LEICESTER</option>
-                <option value="5">CARDIFF</option>
-                <option value="5">BELFAST</option>
+                <option value="Glasgow">GLASGOW</option>
+                <option value="Leicester">LEICESTER</option>
+                <option value="Cardiff">CARDIFF</option>
+                <option value="Belfast">BELFAST</option>
             </select>
-            <button className="add btn btn-primary font-weight-bold" onClick = {this.valueExtractor}>Submit</button>
             </>
 
         )

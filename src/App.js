@@ -22,6 +22,7 @@ class App extends React.Component {
 
   }
 
+
   onLocationSubmit = (location) => {
     //use location to call backend
     console.log(location);
@@ -66,12 +67,12 @@ class App extends React.Component {
     if (Object.keys(this.state.weatherVariables).length === 0) {
       return (<>
         <Header /> (
-        <LocationSelection locationSubmit={this.onLocationSubmit}/>
+        <LocationSelection locationSubmit={this.onLocationSubmit} />
       </>);
     } else {
       return (
         <>
-          <Results />
+          <Results currentLocation={this.state.weatherVariables.weatherParameters.location}/>
         </>
       );
     }
