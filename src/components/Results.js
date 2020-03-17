@@ -9,6 +9,7 @@ class Results extends React.Component {
         return (
             <>
             <HeaderLocation currentLocation={this.props.currentLocation}/>
+            <h2>Weather forecast for the next 3 hours:</h2>
             <WeatherResults currentTemperature={this.props.currentTemperature} 
             currentFeelsLikeTemp={this.props.currentFeelsLikeTemp}
             currentMaxUVIndex={this.props.currentMaxUVIndex}
