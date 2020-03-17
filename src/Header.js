@@ -11,9 +11,8 @@ class Header extends React.Component {
             <header className="text-center">
             <h1 className="titleheader">PACK AN UMBRELLA 
             </h1>
-          
+            <i className="fas fa-umbrella"></i>
             </header>
-            <h3> Lets go for a <FaBeer />? </h3>
         </div>
 
     );

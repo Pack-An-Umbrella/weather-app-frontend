@@ -15,3 +15,8 @@ body {
 .custom-select {
   margin-top: 50px;
 }
+
+.fa-umbrella{
+  font-size: 50px;
+  color: rgb(255, 208, 0);
+}
