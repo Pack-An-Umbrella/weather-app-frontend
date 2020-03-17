@@ -15,7 +15,7 @@ class Results extends React.Component {
             currentWeatherType={this.props.currentWeatherType}
             currentWeatherValue={this.props.currentWeatherValue}
             currentChanceOfRain={this.props.currentChanceOfRain} />
-            <Recommendations />
+            <Recommendations weatherRecommendationFunc={this.props.weatherRecommendationFunc} />
         
 
             </>

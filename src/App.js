@@ -71,6 +71,7 @@ class App extends React.Component {
            currentWeatherType={this.state.weatherVariables.weatherParameters.weatherType}
            currentWeatherValue={this.state.weatherVariables.weatherParameters.weatherValue}
            currentChanceOfRain={this.state.weatherVariables.weatherParameters.chanceOfRain}
+           weatherRecommendationFunc={this.generateRecommendation(this.state.weatherVariables.weatherParameters)}
            />
         </>
       );
