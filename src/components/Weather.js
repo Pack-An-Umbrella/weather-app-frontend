@@ -5,6 +5,7 @@ class Weather extends React.Component {
         return (
             <>
             <p>weather type: {this.props.currentWeatherType}</p>
+            {/* <p>weather value: {this.props.currentWeatherValue} </p> */}
 
 
             </>
