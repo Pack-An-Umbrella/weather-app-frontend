@@ -9,8 +9,8 @@ class Results extends React.Component {
 
         return (
             <>
-            <HeaderLocation currentLocation={this.props.currentLocation} />
-            <WeatherResults />
+            <HeaderLocation currentLocation={this.props.currentLocation}/>
+            <WeatherResults currentTemperature={this.props.currentTemperature}/>
             <Recommendations />
             <ClearButton />
         

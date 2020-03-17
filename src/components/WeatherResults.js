@@ -13,7 +13,7 @@ class WeatherResults extends React.Component {
 
 
             <ResultsStatement />
-            <Temperature />
+            <Temperature currentTemperature={this.props.currentTemperature}/>
             <FeelsLike />
             <UVIndex />
             <ChanceOfRain />

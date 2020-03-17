@@ -72,7 +72,14 @@ class App extends React.Component {
     } else {
       return (
         <>
-          <Results currentLocation={this.state.weatherVariables.weatherParameters.location}/>
+          <Results currentLocation={this.state.weatherVariables.weatherParameters.location}
+           currentTemperature={this.state.weatherVariables.weatherParameters.temperature}
+           currentFeelsLikeTemp={this.state.weatherVariables.weatherParameters.feelsLikeTemperature}
+           currentMaxUVIndex={this.state.weatherVariables.weatherParameters.maxUVIndex}
+           currentWeatherType={this.state.weatherVariables.weatherParameters.weatherType}
+           currentWeatherValue={this.state.weatherVariables.weatherParameters.weatherValue}
+           currentChanceOfRain={this.state.weatherVariables.weatherParameters.chanceOfRain}
+           />
         </>
       );
     }
