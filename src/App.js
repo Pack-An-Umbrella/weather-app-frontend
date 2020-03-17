@@ -10,15 +10,7 @@ class App extends React.Component {
   state = {
 
     weatherVariables : {}
-    // weatherV: {
-    //         location: "location",
-    //         feelsLikeTemperature: 9,
-    //         temperature: 12,
-    //         maxUVIndex: 6,
-    //         humanReadableValue: 'Low exposure',
-    //         weatherType: "overcast",
-    //         weatherValue: 8,
-    //         chanceOfRain: 28
+
 
   }
 
@@ -140,9 +132,6 @@ class App extends React.Component {
     return (
       <div className="container">
         {this.firstLoadComponents()}
-        {/* <Header />
-    <LocationSelection />
-    <Results />  */}
         {/* <WeatherComponent allWeather={this.state.weatherParameters}/> */}
         {/* {this.generateRecommendation(this.state.weatherParameters)}  */}
 
