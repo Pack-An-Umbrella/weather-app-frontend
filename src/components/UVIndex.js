@@ -5,7 +5,7 @@ class UVIndex extends React.Component {
         return (
             <>
 
-
+            <p>UV index {this.props.currentMaxUVIndex}</p>
 
             </>
 
