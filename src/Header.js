@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { FaBeer } from 'react-icons/fa';
+/// import { FaBeer } from 'react-icons/fa';
 
 
 class Header extends React.Component {
