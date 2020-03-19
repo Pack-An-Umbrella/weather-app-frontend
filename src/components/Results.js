@@ -2,14 +2,15 @@ import React from 'react';
 import HeaderLocation from './HeaderLocation';
 import WeatherResults from './WeatherResults';
 import Recommendations from './Recommendations';
+import './WeatherResults.css'
 
 class Results extends React.Component {
     render() {
 
         return (
-            <>
-            <HeaderLocation currentLocation={this.props.currentLocation}/>
-            <h2>Weather forecast for the next 3 hours:</h2>
+            <div className="Results text-center">
+           <h1 className="HeaderLocation"><HeaderLocation currentLocation={this.props.currentLocation}/></h1>
+            <h2 className="ForecastDescription">Weather forecast for the next 3 hours:</h2>
             <WeatherResults currentTemperature={this.props.currentTemperature} 
             currentFeelsLikeTemp={this.props.currentFeelsLikeTemp}
             currentMaxUVIndex={this.props.currentMaxUVIndex}
@@ -19,7 +20,7 @@ class Results extends React.Component {
             <Recommendations weatherRecommendationFunc={this.props.weatherRecommendationFunc} />
         
 
-            </>
+            </div>
 
         )
     }

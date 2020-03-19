@@ -1,0 +1,14 @@
+.HeaderLocation h1 {
+    font-size: 80px;
+    margin-top: 55px;
+    text-transform: uppercase;
+
+}
+
+.ForecastDescription h2 {
+    font-size: 40px;
+}
+
+.Temperature h1 {
+  font-size: 90px;
+}
