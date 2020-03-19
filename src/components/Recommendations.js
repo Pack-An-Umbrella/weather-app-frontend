@@ -6,8 +6,8 @@ class Recommendations extends React.Component {
             <>
     {/* {this.generateRecommendation(this.state.weatherParameters)} */} 
     {/* need to pass the function above as a prop */}
-    <h2>Recommendations</h2>
-    <p>You should pack: {this.props.weatherRecommendationFunc}</p>
+    <h2>RECOMMENDATIONS</h2>
+    <p>YOU SHOULD PACK: {this.props.weatherRecommendationFunc}</p>
 
             </>
 

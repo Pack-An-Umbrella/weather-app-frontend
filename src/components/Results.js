@@ -9,16 +9,16 @@ class Results extends React.Component {
 
         return (
             <div className="Results text-center">
-           <h1 className="HeaderLocation"><HeaderLocation currentLocation={this.props.currentLocation}/></h1>
-            <h2 className="ForecastDescription">Weather forecast for the next 3 hours:</h2>
-            <WeatherResults currentTemperature={this.props.currentTemperature} 
-            currentFeelsLikeTemp={this.props.currentFeelsLikeTemp}
-            currentMaxUVIndex={this.props.currentMaxUVIndex}
-            currentWeatherType={this.props.currentWeatherType}
-            currentWeatherValue={this.props.currentWeatherValue}
-            currentChanceOfRain={this.props.currentChanceOfRain} />
-            <Recommendations weatherRecommendationFunc={this.props.weatherRecommendationFunc} />
-        
+                <h1 className="HeaderLocation"><HeaderLocation currentLocation={this.props.currentLocation} /></h1>
+                <h2 className="ForecastDescription">WEATHER FORECAST FOR THE NEXT 3 HOURS</h2>
+                <WeatherResults currentTemperature={this.props.currentTemperature}
+                    currentFeelsLikeTemp={this.props.currentFeelsLikeTemp}
+                    currentMaxUVIndex={this.props.currentMaxUVIndex}
+                    currentWeatherType={this.props.currentWeatherType}
+                    currentWeatherValue={this.props.currentWeatherValue}
+                    currentChanceOfRain={this.props.currentChanceOfRain} />
+                <Recommendations weatherRecommendationFunc={this.props.weatherRecommendationFunc} />
+
 
             </div>
 

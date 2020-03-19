@@ -1,14 +1,30 @@
 .HeaderLocation h1 {
-    font-size: 80px;
+    font-size: 70px;
     margin-top: 55px;
+    margin-bottom: 55px;
     text-transform: uppercase;
 
 }
 
 .ForecastDescription h2 {
     font-size: 40px;
+ 
 }
 
 .Temperature h1 {
   font-size: 90px;
+}
+
+.icons  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.icons h2 {
+  margin-left: 50px;
+  margin-right: 50px;
 }

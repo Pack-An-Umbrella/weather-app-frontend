@@ -1,9 +1,7 @@
 body {
-  background-image: url(https://www.iasexpress.net/wp-content/uploads/2018/08/londonweather0908c.jpg);
+  /* background-image: url(https://www.iasexpress.net/wp-content/uploads/2018/08/londonweather0908c.jpg); */
+  background-image: url(https://i2-prod.mirror.co.uk/incoming/article16512243.ece/ALTERNATES/s1227b/0_Seasonal-weather-London-UK-13-Jun-2019.jpg);
   background-repeat: no-repeat;
-
-
-
 }
 
 .titleheader {
@@ -15,6 +13,13 @@ body {
 
 .custom-select {
   margin-top: 50px;
+  height: 50px;
+  font-size: 25px;
+  opacity: 0.8;
+  background-color: white ;
+  border: transparent;
+  border-radius: 50px;
+
 }
 
 .fa-umbrella{
