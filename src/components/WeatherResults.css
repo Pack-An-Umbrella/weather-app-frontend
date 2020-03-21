@@ -1,18 +1,26 @@
+.Results {
+background-color: rgba(137, 166, 250, 0.445);
+}
+
+
 .HeaderLocation h1 {
     font-size: 70px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 55px;
     text-transform: uppercase;
+    color: rgb(255, 255, 255);
 
 }
 
-.ForecastDescription h2 {
+.ForecastDescription  {
     font-size: 40px;
-    margin-top: 60px;
+    margin-top: 4px;
+    color: rgb(255, 255, 255);
 }
 
 .Temperature h1 {
   font-size: 120px;
+  color: rgb(255, 255, 255);
 }
 
 .icons  {
@@ -26,8 +34,20 @@
   margin-right: 30px;
 }
 
-.RecommendationPack {
+.icons p {
+  color: rgb(255, 255, 255)
+}
+
+
+.WeatherType {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Recommendation {
   font-size: 40px; 
+  color: rgb(255, 255, 255); 
+  margin-top: 20px;
 }
 
 
@@ -208,7 +228,6 @@
   left: 50%;
   margin: -1.025em 0 0 -1.0125em;
   color: rgb(255, 255, 255);
-  /* list-height: 1em; */
   opacity: 0.2;
   animation: spin 8s linear infinite reverse;
 }

@@ -103,8 +103,7 @@ class App extends React.Component {
 
   feelsLikeTemperature = (temperature) => {
     if (temperature <= 11) {
-      // return "a warm jacket";
-      return (<> {FaBeer} </>);
+      return "a warm jacket";
     } else if (temperature > 11 && temperature < 19) {
       return "a light jacket";
     } else {

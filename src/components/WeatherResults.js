@@ -20,8 +20,6 @@ class WeatherResults extends React.Component {
                 </div>
                 <Weather currentWeatherType={this.props.currentWeatherType}
                     currentWeatherValue={this.props.currentWeatherValue} />
-
-
             </>
 
         )

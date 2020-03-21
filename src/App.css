@@ -8,9 +8,16 @@ body {
 
 .titleheader {
   text-align: center;
-  font-size: 50px;
+  font-size: 80px;
   opacity: 0.8;  
   margin-top: 60px;
+  color: rgb(255, 255, 255);
+}
+
+.fa-umbrella {
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  font-size: 50px;
 }
 
 .custom-select {
@@ -18,12 +25,9 @@ body {
   height: 50px;
   font-size: 25px;
   opacity: 0.8;
-  background-color: white ;
+  background-color: rgb(255, 255, 255) ;
   border: transparent;
   border-radius: 50px;
 
 }
 
-.fa-umbrella{
-  font-size: 50px;
-}
