@@ -5,6 +5,7 @@ import LocationSelection from './components/LocationSelection';
 import Results from './components/Results';
 import { FaBeer } from 'react-icons/fa';
 
+
 class App extends React.Component {
 
 
@@ -94,7 +95,7 @@ class App extends React.Component {
 
   uvRecommendation = (uvMax) => {
     if (uvMax >= 3) {
-      return "sunglasses";
+      return "sunglasses" ;
     } else {
       return "";
     }
@@ -102,8 +103,8 @@ class App extends React.Component {
 
   feelsLikeTemperature = (temperature) => {
     if (temperature <= 11) {
-      //return "a warm jacket";
-      return (<> { FaBeer } </>);
+      // return "a warm jacket";
+      return (<> {FaBeer} </>);
     } else if (temperature > 11 && temperature < 19) {
       return "a light jacket";
     } else {

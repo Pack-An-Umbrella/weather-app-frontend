@@ -14,9 +14,9 @@ class WeatherResults extends React.Component {
                 <ResultsStatement />
                 <Temperature currentTemperature={this.props.currentTemperature} />
                 <div className="icons">
-                    <h2><FeelsLike currentFeelsLikeTemp={this.props.currentFeelsLikeTemp} /></h2>
-                    <h2><UVIndex currentMaxUVIndex={this.props.currentMaxUVIndex} /></h2>
-                    <h2><ChanceOfRain currentChanceOfRain={this.props.currentChanceOfRain} /></h2>
+                    <h3><FeelsLike currentFeelsLikeTemp={this.props.currentFeelsLikeTemp} /></h3>
+                    <h3><UVIndex currentMaxUVIndex={this.props.currentMaxUVIndex} /></h3>
+                    <h3><ChanceOfRain currentChanceOfRain={this.props.currentChanceOfRain} /></h3>
                 </div>
                 <Weather currentWeatherType={this.props.currentWeatherType}
                     currentWeatherValue={this.props.currentWeatherValue} />
