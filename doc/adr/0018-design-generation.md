@@ -19,3 +19,6 @@ The team brainstormed design ideas using the 'Crazy 8s' technique to burst as ma
 
 * Team need to be flexible in case the design has to change
 * Team decided which aspects of the design would be priority (e.g. colour and icons), and which aspects would be nice-to-have (e.g. responsiveness) in case of lack of time 
+
+![Pack An Umbrella (weather app) - Homepage](https://user-images.githubusercontent.com/32596770/77258676-1c98bf00-6c74-11ea-9c94-75b46eb64b6b.png)
+![Pack An Umbrella (weather app) - Example location query](https://user-images.githubusercontent.com/32596770/77258685-320de900-6c74-11ea-9d31-7c2de4f7a5fa.png)
