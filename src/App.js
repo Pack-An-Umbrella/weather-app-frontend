@@ -3,7 +3,6 @@ import React from 'react';
 import Header from './Header.js';
 import LocationSelection from './components/LocationSelection';
 import Results from './components/Results';
-import { FaBeer } from 'react-icons/fa';
 
 
 class App extends React.Component {
