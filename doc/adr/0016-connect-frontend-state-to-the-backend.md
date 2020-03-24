@@ -16,6 +16,6 @@ We used Fetch API to get data from our backend API. Then we got an object as a r
 
 ## Consequences
 
-Updating state with the weather variables drawn from the backend API. 
-Translating the fetched object into a JSON object. 
-In case of errors catching them into a console.log . 
+* Updating state with the weather variables drawn from the backend API
+* Translating the fetched object into a JSON object
+* In case of errors catching them into a console.log
