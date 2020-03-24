@@ -1,4 +1,4 @@
-# 17. Connect Frontend State to the Backend
+# 16. Connect Frontend State to the Backend
 
 ## Status
 
