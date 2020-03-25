@@ -4,7 +4,15 @@ class FeelsLike extends React.Component {
     render() {
         return (
             <>
-            <p>Feels like {this.props.currentFeelsLikeTemp}</p>
+                <div className="icon flurries">
+                    <div className="cloud"></div>
+                    <div className="snow">
+                        <div className="flake"></div>
+                        <div className="flake"></div>
+                    </div>
+                </div>
+                <p>{this.props.currentFeelsLikeTemp}°</p>
+                <p>FEELS LIKE...</p>
 
 
             </>

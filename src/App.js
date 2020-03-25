@@ -4,6 +4,8 @@ import Header from './Header.js';
 import LocationSelection from './components/LocationSelection';
 import Results from './components/Results';
 
+
+
 class App extends React.Component {
 
 
@@ -58,7 +60,7 @@ class App extends React.Component {
 
     if (Object.keys(this.state.weatherVariables).length === 0) {
       return (<>
-        <Header /> (
+        <Header /> 
         <LocationSelection locationSubmit={this.onLocationSubmit} />
       </>);
     } else {
@@ -93,7 +95,7 @@ class App extends React.Component {
 
   uvRecommendation = (uvMax) => {
     if (uvMax >= 3) {
-      return "sunglasses";
+      return "sunglasses" ;
     } else {
       return "";
     }
@@ -133,9 +135,7 @@ class App extends React.Component {
     return (
       <div className="container">
         {this.firstLoadComponents()}
-        {/* <WeatherComponent allWeather={this.state.weatherParameters}/> */}
-        {/* {this.generateRecommendation(this.state.weatherParameters)}  */}
-
+       
       </div>
     );
   }

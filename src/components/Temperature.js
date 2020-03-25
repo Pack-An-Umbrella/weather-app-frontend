@@ -1,13 +1,12 @@
 import React from 'react';
+import './WeatherResults.css'
 
 class Temperature extends React.Component {
     render() {
         return (
-            <>
-            <p>Temperature {this.props.currentTemperature}</p>
-
-
-            </>
+            <div className="Temperature">
+            <h1>{this.props.currentTemperature}°</h1>
+            </div>
 
         )
     }

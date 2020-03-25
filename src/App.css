@@ -1,17 +1,32 @@
 body {
-  background-image: url(https://s2.best-wallpaper.net/wallpaper/1920x1080/1712/Colorful-umbrellas-street_1920x1080.jpg);
-  font-family: 'Righteous', cursive;
-
+  /* background-image: url(https://www.iasexpress.net/wp-content/uploads/2018/08/londonweather0908c.jpg); */
+  background-image: url(https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/10/02/08/wetweather021019-6.jpg);
+  background-repeat: no-repeat;
+  font-family: 'Oswald', sans-serif;
 }
 
 .titleheader {
-  color:  rgb(255, 208, 0);
   text-align: center;
-  font-size: 50px;
+  font-size: 80px;
   opacity: 0.8;  
-  margin-top: 60px;
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.fa-umbrella {
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  font-size: 50px;
 }
 
 .custom-select {
-  margin-top: 50px;
+  margin-top: 30px;
+  height: 50px;
+  font-size: 25px;
+  opacity: 0.8;
+  background-color: rgb(255, 255, 255) ;
+  border: transparent;
+  border-radius: 50px;
+
 }
+
